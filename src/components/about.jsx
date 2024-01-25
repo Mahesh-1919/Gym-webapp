@@ -5,9 +5,7 @@ function About() {
         id="about"
         className="container-lg bg-black w-screen md:p-8 p-4 "
       >
-        <h1 className="text-red-600 text-2xl font-bold md:text-4xl text-center ">
-          About Us
-        </h1>
+        <h1 className="sec-head  ">About Us</h1>
         <div className="flex flex-col items-center  md:flex-row md:pt-8 md:gap-4 md:w-3/4 mx-auto">
           <div className="  ">
             <img

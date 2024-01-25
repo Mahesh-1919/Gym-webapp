@@ -3,9 +3,7 @@ function Services() {
   return (
     <>
       <section id="services" className="w-screen md:px-8 p-4 md:pb-16 ">
-        <h1 className="text-red-600 text-center text-4xl font-bold mb-8">
-          Services
-        </h1>
+        <h1 className="sec-head  mb-8">Services</h1>
         <div className=" text-white flex flex-wrap gap-6 justify-center   ">
           <Card
             content="Personal"

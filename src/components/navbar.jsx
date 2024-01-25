@@ -11,14 +11,14 @@ function Navbar() {
   }
   return (
     <>
-      <nav className="p-4 pb-6 px-8 text-white flex justify-between items-center bg-transparent  ">
+      <nav className="p-4 px-8 text-white flex justify-between items-center bg-transparent  ">
         <div className="flex items-center">
           <GiWeightLiftingUp className="text-3xl" />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-white text-2xl font-bold">
             GYM
           </span>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden text-xl">
           <button onClick={clickhandle}>
             {open ? <IoClose /> : <IoMenu />}
           </button>
@@ -41,8 +41,8 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="workouts" spy={true} smooth={true} offset={-100}>
-                WORKOUTS
+              <Link to="about" spy={true} smooth={true} offset={-100}>
+                ABOUT
               </Link>
             </li>
             <li className="nav-item">

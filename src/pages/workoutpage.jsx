@@ -25,25 +25,28 @@ const Workout = () => {
       console.error(error);
     }
   }, []);
-  return !targetList ? (
-    <ShimmerUi />
-  ) : (
+
+  return (
     <div id="workouts">
       <h1 className="text-center text-3xl p-8  text-red-600  font-bold">
         {id.toUpperCase()}
       </h1>
-      <div className="flex gap-4 flex-wrap list-none justify-center  ">
-        {targetList.map((item) => (
-          <li key={item.id} className="">
-            <h1 className="text-center p-4 truncate">{item.name}</h1>
-            <img
-              src={item.gifUrl}
-              alt="image"
-              className="h-48 w-48 md:h-auto md:w-auto mx-auto"
-            />
-          </li>
-        ))}
-      </div>
+      {!targetList ? (
+        <ShimmerUi />
+      ) : (
+        <div className="flex gap-4 flex-wrap list-none justify-center  ">
+          {targetList.map((item) => (
+            <li key={item.id} className="">
+              <h1 className="text-center p-4 truncate">{item.name}</h1>
+              <img
+                src={item.gifUrl}
+                alt="image"
+                className="h-48 w-48 md:h-auto md:w-auto mx-auto"
+              />
+            </li>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

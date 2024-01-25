@@ -10,7 +10,7 @@ const home = () => {
       <Hero />
       <About />
       <Services />
-      <Workout />
+
       <Prices />
       <Contact />
     </>

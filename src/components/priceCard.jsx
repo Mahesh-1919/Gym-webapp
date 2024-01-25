@@ -6,11 +6,11 @@ function Pricecard(props) {
           Standard plan
         </h5>
         <div className="flex items-baseline text-gray-900 dark:text-white">
-          <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">
+          <span className="text-2xl font-semibold">$</span>
+          <span className="text-3xl font-extrabold tracking-tight">
             {props.price}
           </span>
-          <span className="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+          <span className="ms-1 text-lg font-normal text-gray-500 dark:text-gray-400">
             /month
           </span>
         </div>

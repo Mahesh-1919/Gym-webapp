@@ -23,19 +23,20 @@ const Workouts = () => {
   }, []);
   return (
     <section id="workouts">
-      <h1 className="text-red-600 text-center text-4xl font-bold ">Workouts</h1>
-
+      <h1 className="sec-head ">Workouts</h1>
       {!list ? (
         <ShimmerUi />
       ) : (
         <ul className="flex   gap-2 md:gap-6 p-8 md:w-5/6 flex-wrap justify-center text-sm md:text-lg mx-auto">
-          {list.map((item, index) => (
+          {/* {list.map((item, index) => (
             <Link to={`/workoutspage/${item}`} key={index}>
               <li key={index} className="workout-item">
                 {item}
               </li>
             </Link>
-          ))}
+          ))} */}
+
+          {console.log(list)}
         </ul>
       )}
     </section>
